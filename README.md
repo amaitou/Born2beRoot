@@ -143,8 +143,8 @@ In its default enforcing mode, `SELinux` will deny and log any unauthorized atte
 
 - SELinux is the Default for Rocky Linux, AlmaLinux, CentOS, and Red Hat.
 - SELinux is Designed to protect the entire operating system.
-- AppArmor is the Default for OpenSUSE, Debian and Ubuntu
+- AppArmor is the Default for OpenSUSE, Debian and Ubuntu.
 - AppArmor works with file paths.
-- AppArmor is less complex and easier for the average user to learn than SELinux
+- AppArmor is less complex and easier for the average user to learn than SELinux.
 
 ---
