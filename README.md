@@ -22,7 +22,7 @@ The project consists of two parts
 
 **LVM** stands for `Logical Volume Management/Manager`, it is a system of managing storage `Logical Volumes` (Explained below).
 **LVM** helps you create flexible disks as well as gives you the ability to manage them dynamically (resizing, striping ...). <br />
-**LVM** does not deal with physical disks, so in order to create your `Logical Volume` **LVM** converts the physical discs to `Physical Volumes` then collects them in groups called `Volume Groups`, then Gives them to the `Logical Volume`.
+**LVM** does not deal with physical disks, so in order to create your `Logical Volume` **LVM** converts the physical disks to `Physical Volumes` then collects them in groups called `Volume Groups`, then Gives them to the `Logical Volume`.
 
 * **Physical volume** -> A `Physical Volume` is any physical storage device, such as a Hard Disk Drive (HDD), Solid State Drive (SSD), or partition, that has been initialized as a physical volume with **LVM**, The `PV` is a divided chunk of data that also known as `Physical Extents` and that last have the same size as the other `PEs` (4 MB by default).
 
