@@ -39,8 +39,8 @@ The project consists of two parts
 
     **_Conclusion of LVM_**
     - `LVM` does not deal with physical disks.
-    - each `Physical Volume` has a number of `Physical Extents`.
-    - each `Physical Extent` has a specific size (default `PE`'s size is _4 MO_).
+    - each Physical Volume has a number of `Physical Extents`.
+    - each extent has a specific size (default `PE` size is _4 MO_).
     - A single `Physical Extent` is the smallest unit of disk space that can be individually managed by `LVM`
 
     <br />
@@ -59,3 +59,69 @@ The project consists of two parts
     Each `Physical Volume` would have _32 000_ `PEs` and the total `PEs` of the collected `PVs` is _128 000_.
 
 ----
+
+# The difference between **aptitude** and **apt**?
+
+`apt-get` and `aptitude ` are both package managers that are responsible for any kind of activities related to packages (removing, installing, searchin, updating, upgrading ...).
+
+but the most obvious difference between them is that `aptitude` has a terminal menu interface to interact with, whereas `apt-get ` doesn't.
+
+rather than the difference in the command line interface, we can say that both `aptitude` and `apt-get` are too similar to each other. but we cannot deny that they have some minor differences as instances:
+
+- `apt-get` requires a specific command to remove the eligible files of a particular package whereas` aptitude` removes them automatically.
+- ` aptitude ` actually performs the functions of not just ` apt-get `, but also some of its companion tools, such *as apt-cache* *and apt-mark*
+- If the actions (installing, removing, updating packages) that you want to take cause conflicts, `aptitude ` can suggest several potential resolutions. ` apt-get ` will just say "I'm sorry Man, I can't allow you to do that.".
+- ` aptitude` has the *why* and *why-not* commands to tell you which *manually installed*
+ packages are preventing an action that you might want to take.
+- Aptitude can find you the reason to install a certain package by looking in the list of installed packages and checking if any of their suggested packages have dependencies or any of their dependencies suggests that package or so on.
+
+So, for most cases, the syntax of **Aptitude** is kept almost the same as that of `apt-get`, to make users of apt-get have less pain in migrating to Aptitude, but in addition to this, many powerful features are integrated into Aptitude that makes it the one to be chosen.
+
+<br />
+
+> I've been using `apt-get` but after I knew about `aptitude`, I started using it
+
+<br />
+
+### **Installing packages in `aptitude` and `apt-get`**
+```sh
+# apt-get
+apt-get install <PackageName>
+
+#aptitude
+aptitude install <PackageName>
+```
+
+### **Search for packages in `aptitude` and `apt-get`**
+```sh
+# apt-get
+apt-cache search <PackageName>
+
+# aptitude
+aptitude search <PackageName>
+```
+
+### **Remove packages in `aptitude` and `apt-get`**
+
+When talking about uninstalling packages using apt package manager, we have the following two options :
+
+- **remove**
+- **purge**
+
+The primary difference being **remove** and ‘purge‘ is that **remove** only gets rid of the package leaving any configuration files untouched. Whereas **purge** not only removes the package but also removes all configuration files OUTSIDE THE HOME DIRECTORY.
+
+---
+**NOTE** -> `aptitude` remove the package including its configuration files
+
+---
+
+```sh
+# apt-get
+apt-get remove <PackageName> # removes only the package and leaves its configuration files
+apt-get purge <PackageName> # remove the package including its configuration files
+
+# aptitude
+aptitude remove <PackageName>
+```
+
+---
