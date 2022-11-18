@@ -1,5 +1,6 @@
 ----
-![hyper-virtualization](https://user-images.githubusercontent.com/49293816/202592689-9f04d01f-b345-4a52-ac85-1fd6d96c244a.jpg)
+![VRlogo](https://user-images.githubusercontent.com/49293816/202593303-f11f8a05-204f-4484-8745-f2635b9ab054.jpg)
+
 ----
 # Born2beRoot
 
