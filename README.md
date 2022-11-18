@@ -39,8 +39,8 @@ The project consists of two parts
 
     **_Conclusion of LVM_**
     - `LVM` does not deal with physical disks.
-    - each Physical Volume has a number of `Physical Extents`.
-    - each extent has a specific size (default `PE` size is _4 MO_).
+    - each `Physical Volume` has a number of `Physical Extents`.
+    - each `Physical Extent` has a specific size (default `PE`'s size is _4 MO_).
     - A single `Physical Extent` is the smallest unit of disk space that can be individually managed by `LVM`
 
     <br />
