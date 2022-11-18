@@ -125,3 +125,26 @@ aptitude remove <PackageName>
 ```
 
 ---
+
+# **AppArmor** and **SELinux**
+
+Both `AppArmor` and `SELinux` _(Security Enhanced Linux)_ are Linux Kernel Securities that are used to increase security in Linux distributions by hardening access to files and processes (`AppArmor` is the most used for this purpose).  <br />
+These security systems provide tools to isolate applications from each other... and in turn isolate an attacker from the rest of the system when an application is compromised.
+
+### **SELinux**
+`SELinux` is a kernel module that can be enabled or disabled by the system admin. As access to files and network ports is limited following a security policy, a faulty program or a misconfigured daemon can’t make a huge impact on system security. <br />
+In its default enforcing mode, `SELinux` will deny and log any unauthorized attempts to access any resource. This approach usually referred to as the principle of least privilege, means that explicit permission must be given to a user or program to access files, directories, sockets, and other services.
+
+### **AppArmor**
+`AppArmor` is a Linux Security Module implementation of name-based _Mandatory Access Controls (MAC)_. it confines individual programs to a set of listed files. <br>
+`AppArmor` is installed and loaded by default. It uses *profiles* of an application to determine what files and permissions the application requires. Some packages will install their own profiles.
+
+### The Difference between **AppArmor** and **SELinux**
+
+- SELinux is the Default for Rocky Linux, AlmaLinux, CentOS, and Red Hat.
+- SELinux is Designed to protect the entire operating system.
+- AppArmor is the Default for OpenSUSE, Debian, Ubuntu
+- AppArmor works with file paths.
+- AppArmor is less complex and easier for the average user to learn than SELinux
+
+---
