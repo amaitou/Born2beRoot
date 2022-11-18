@@ -1,4 +1,6 @@
 ----
+![hyper-virtualization](https://user-images.githubusercontent.com/49293816/202592689-9f04d01f-b345-4a52-ac85-1fd6d96c244a.jpg)
+----
 # Born2beRoot
 
 This is the fourth project of `42/1337Cursus`. <br />
