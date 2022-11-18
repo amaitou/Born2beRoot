@@ -1,3 +1,4 @@
+----
 # Born2beRoot
 
 This is the fourth project of `42/1337Cursus`. <br />
@@ -9,7 +10,12 @@ The project consists of two parts
 
 > Note: The **Bonus Part** is not that necessary to validate the project, but it gives some extra XPs and spreads **`The Blackhole`**.
 
+----
+
 # What is LVM?
+
+![LVM Cropped](https://user-images.githubusercontent.com/49293816/202592106-165fba90-e47f-4ff1-85e7-d7777c1062df.jpg)
+
 
 **LVM** stands for `Logical Volume Management/Manager`, it is a system of managing storage `Logical Volumes` (Explained below).
 **LVM** helps you create flexible disks as well as gives you the ability to manage them dynamically (resizing, striping ...). <br />
@@ -48,3 +54,5 @@ The project consists of two parts
         `32 000 * 4 = 128 000` <br />
 
     Each `Physical Volume` would have _32 000_ `PEs` and the total `PEs` of the collected `PVs` is _128 000_.
+
+----
