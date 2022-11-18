@@ -2,6 +2,26 @@
 ![VRlogo](https://user-images.githubusercontent.com/49293816/202593303-f11f8a05-204f-4484-8745-f2635b9ab054.jpg)
 
 ----
+
+# Table of content
+- [Born2beRoot](https://github.com/amaitou/Born2beRoot#born2beroot)
+- [What is LVM?](https://github.com/amaitou/Born2beRoot#what-is-lvm)
+- [The difference between aptitude and apt?
+](https://github.com/amaitou/Born2beRoot#the-difference-between-aptitude-and-apt)
+    - [Installing packages in aptitude and apt-get
+](https://github.com/amaitou/Born2beRoot#installing-packages-in-aptitude-and-apt-get)
+    - [Search for packages in aptitude and apt-get
+](https://github.com/amaitou/Born2beRoot#search-for-packages-in-aptitude-and-apt-get)
+    - [Remove packages in aptitude and apt-get
+](https://github.com/amaitou/Born2beRoot#remove-packages-in-aptitude-and-apt-get)
+- [AppArmor and SELinux
+](https://github.com/amaitou/Born2beRoot#apparmor-and-selinux)
+    - [SELinux](https://github.com/amaitou/Born2beRoot#selinux)
+    - [AppArmor](https://github.com/amaitou/Born2beRoot#apparmor)
+    - [The Difference between AppArmor and SELinux
+](https://github.com/amaitou/Born2beRoot#the-difference-between-apparmor-and-selinux)
+
+----
 # Born2beRoot
 
 This is the fourth project of `42/1337Cursus`. <br />
