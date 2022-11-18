@@ -9,7 +9,7 @@ The project consists of two parts
 
 > Note: The **Bonus Part** is not that necessary to validate the project, but it gives some extra XPs and spreads **`The Blackhole`**.
 
-# What is LVM
+# What is LVM?
 
 **LVM** stands for `Logical Volume Management/Manager`, it is a system of managing storage `Logical Volumes` (Explained below).
 **LVM** helps you create flexible disks as well as gives you the ability to manage them dynamically (resizing, striping ...). <br />
