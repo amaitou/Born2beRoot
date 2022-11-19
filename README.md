@@ -6,20 +6,18 @@
 # Table of content
 - [Born2beRoot](https://github.com/amaitou/Born2beRoot#born2beroot)
 - [What is LVM?](https://github.com/amaitou/Born2beRoot#what-is-lvm)
-- [The difference between aptitude and apt?
-](https://github.com/amaitou/Born2beRoot#the-difference-between-aptitude-and-apt)
-    - [Installing packages in aptitude and apt-get
-](https://github.com/amaitou/Born2beRoot#installing-packages-in-aptitude-and-apt-get)
-    - [Search for packages in aptitude and apt-get
-](https://github.com/amaitou/Born2beRoot#search-for-packages-in-aptitude-and-apt-get)
-    - [Remove packages in aptitude and apt-get
-](https://github.com/amaitou/Born2beRoot#remove-packages-in-aptitude-and-apt-get)
-- [AppArmor and SELinux
-](https://github.com/amaitou/Born2beRoot#apparmor-and-selinux)
+- [The difference between aptitude and apt?](https://github.com/amaitou/Born2beRoot#the-difference-between-aptitude-and-apt)
+    - [Installing packages in aptitude and apt-get](https://github.com/amaitou/Born2beRoot#installing-packages-in-aptitude-and-apt-get)
+    - [Search for packages in aptitude and apt-get](https://github.com/amaitou/Born2beRoot#search-for-packages-in-aptitude-and-apt-get)
+    - [Remove packages in aptitude and apt-get](https://github.com/amaitou/Born2beRoot#remove-packages-in-aptitude-and-apt-get)
+- [AppArmor and SELinux](https://github.com/amaitou/Born2beRoot#apparmor-and-selinux)
     - [SELinux](https://github.com/amaitou/Born2beRoot#selinux)
     - [AppArmor](https://github.com/amaitou/Born2beRoot#apparmor)
     - [The Difference between AppArmor and SELinux
 ](https://github.com/amaitou/Born2beRoot#the-difference-between-apparmor-and-selinux)
+- [What is SSH?](https://github.com/amaitou/Born2beRoot/blob/master/README.md#what-is-ssh)
+  - [How Does SSH Work?](https://github.com/amaitou/Born2beRoot/blob/master/README.md#how-does-ssh-work)
+  - [Syntax of establishing an SSH Connection](https://github.com/amaitou/Born2beRoot/blob/master/README.md#syntax-of-establishing-an-ssh-connection)
 
 ----
 # Born2beRoot
@@ -170,9 +168,6 @@ In its default enforcing mode, `SELinux` will deny and log any unauthorized atte
 ---
 
 # **What is SSH?**
-
-![61c1b963247368113bbeef17_Secure Shell work](https://user-images.githubusercontent.com/49293816/202862102-1374ec00-87c1-4c3d-a9fa-6fe8c502ddf8.png)
-
 
 `SSH (Secure Shell or Secure Socket Shell)` is a network protocol that provides a secure way to connect two machines remotely so they can transmit and receive data securely.
 It is widely used by administrators to manage systems and applications remotely, deliver software patches as well as exeute commands and move files.
