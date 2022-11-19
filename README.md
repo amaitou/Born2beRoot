@@ -171,6 +171,9 @@ In its default enforcing mode, `SELinux` will deny and log any unauthorized atte
 
 # **What is SSH?**
 
+![61c1b963247368113bbeef17_Secure Shell work](https://user-images.githubusercontent.com/49293816/202862102-1374ec00-87c1-4c3d-a9fa-6fe8c502ddf8.png)
+
+
 `SSH (Secure Shell or Secure Socket Shell)` is a network protocol that provides a secure way to connect two machines remotely so they can transmit and receive data securely.
 It is widely used by administrators to manage systems and applications remotely, deliver software patches as well as exeute commands and move files.
 By default, an **SSH** Server listens on _TCP (Tranmission Control Protocol)_ port 22.
