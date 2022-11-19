@@ -187,3 +187,80 @@ ssh <username>@<server ip or hostname> -p <port>
 ```
 
 ---
+
+# What is **UFW**?
+
+`UFW (uncomplicated firewall)` is a firewall configuration tool that helps you secure your network properly. as well as it is a much more user-friendly framework for managing Netfilter and a command-line interface for working with the firewall. On top of that, if you'd rather not deal with the command line, `UFW` has a few GUI tools that make working with the system incredibly simple.
+> Note -> **UFW** comes pre-installed on **Ubuntu**
+
+<br />
+
+### **Let's deal UFW Work?**
+- Check the status of the UFW
+
+    ```sh
+    sudo ufw status
+    ```
+    ---
+- Enable UFW to be run at the startup of the system
+  
+    ```sh
+    sudo ufw enable
+    ```
+    ---
+- Disable UFW from being run at the startup of the System
+  
+    ```sh
+    sudo ufw disable
+    ```
+    ---
+- Block an IP Address
+
+    ```sh
+    sudo ufw deny from <x.x.x.x>
+    ```
+    ---
+- Allow an IP Address
+
+    ```sh
+    sudo ufw allow from <x.x.x.x>
+    ```
+Allowing and blocking either **IP Address, Ports, Subnets** would be added to the UFW as rules.
+
+- Delete UFW's rule
+
+    ```sh
+    # delete an UFW's rule
+    sudo ufw delete <rule>
+    #example
+    sudo ufw delete allow from <x.x.x.x>
+    ```
+
+### **UFW Profiles**
+
+Some of the applications that rely on network communications set up profiles in UFW that you can use to allow connections from the external address.
+
+
+- List currently available profiles
+
+    ```sh
+        sudo ufw app list
+    ```
+    ---
+- Enable a profile application
+
+    ```sh
+        # enable profile application
+        sudo ufw allow <profile name>
+        # example (enabling ssh)
+        sudo ufw allow “OpenSSH”
+    ```
+    ---
+- Disable an application profile
+
+    In order to disable an application you must delete the created rule for it
+    ```sh
+        sudo ufw delete allow <profile name>
+    ```
+
+---
