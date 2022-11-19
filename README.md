@@ -19,7 +19,7 @@
   - [How Does SSH Work?](https://github.com/amaitou/Born2beRoot/blob/master/README.md#how-does-ssh-work)
   - [Syntax of establishing an SSH Connection](https://github.com/amaitou/Born2beRoot/blob/master/README.md#syntax-of-establishing-an-ssh-connection)
 - [What is UFW?](https://github.com/amaitou/Born2beRoot/blob/master/README.md#what-is-ufw)
-    - [Let's deal with UFW](https://github.com/amaitou/Born2beRoot/blob/master/README.md#lets-with-ufw)
+    - [Let's deal with UFW](https://github.com/amaitou/Born2beRoot/blob/master/README.md#lets-deal-with-ufw)
     - [UFW Profiles](https://github.com/amaitou/Born2beRoot/blob/master/README.md#ufw-profiles)
 
 ----
