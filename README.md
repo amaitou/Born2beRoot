@@ -168,3 +168,19 @@ In its default enforcing mode, `SELinux` will deny and log any unauthorized atte
 - AppArmor is less complex and easier for the average user to learn than SELinux.
 
 ---
+
+# **What is SSH?**
+
+`SSH (Secure Shell or Secure Socket Shell)` is a network protocol that provides a secure way to connect two machines remotely so they can transmit and receive data securely.
+It is widely used by administrators to manage systems and applications remotely, deliver software patches as well as exeute commands and move files.
+By default, an **SSH** Server listens on _TCP (Tranmission Control Protocol)_ port 22.
+
+### **How Does SSH Work?**
+
+The connection is established by an `SSH Client` that intends to connect to an `SSH Server`, the `SSH Client` starts the connection setup process and uses a pubic key to verify the identity of the `SSH Server`, after the setup step, the `SSH Protcol` uses strong symmetric encryption and hashing algorithms to ensure the privacy and integrity of the exchanged data between the `Client` and the `Server`.
+
+### **Syntax of establishing an SSH Connection**
+
+```sh
+ssh <username>@<server ip or hostname> -p <port>
+```
