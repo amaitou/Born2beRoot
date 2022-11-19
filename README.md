@@ -193,6 +193,9 @@ ssh <username>@<server ip or hostname> -p <port>
 
 # What is **UFW**?
 
+![1111-6](https://user-images.githubusercontent.com/49293816/202873453-8b3e83c6-a0c6-4464-bbed-0584c10fabbd.png)
+
+
 `UFW (uncomplicated firewall)` is a firewall configuration tool that helps you secure your network properly. as well as it is a much more user-friendly framework for managing Netfilter and a command-line interface for working with the firewall. On top of that, if you'd rather not deal with the command line, `UFW` has a few GUI tools that make working with the system incredibly simple.
 > Note -> **UFW** comes pre-installed on **Ubuntu**
 
