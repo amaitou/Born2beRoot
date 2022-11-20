@@ -149,6 +149,9 @@ aptitude remove <PackageName>
 
 # **AppArmor** and **SELinux**
 
+![selinux-vs-apparmor](https://user-images.githubusercontent.com/49293816/202918686-e0050a32-d107-4e70-ae6a-4fedc1b0f34a.jpg)
+
+
 Both `AppArmor` and `SELinux` _(Security Enhanced Linux)_ are Linux Kernel Securities that are used to increase security in Linux distributions by hardening access to files and processes (`AppArmor` is the most used for this purpose).  <br />
 These security systems provide tools to isolate applications from each other... and in turn isolate an attacker from the rest of the system when an application is compromised.
 
