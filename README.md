@@ -13,14 +13,19 @@
 - [AppArmor and SELinux](https://github.com/amaitou/Born2beRoot#apparmor-and-selinux)
     - [SELinux](https://github.com/amaitou/Born2beRoot#selinux)
     - [AppArmor](https://github.com/amaitou/Born2beRoot#apparmor)
-    - [The Difference between AppArmor and SELinux
-](https://github.com/amaitou/Born2beRoot#the-difference-between-apparmor-and-selinux)
+    - [The Difference between AppArmor and SELinux](https://github.com/amaitou/Born2beRoot#the-difference-between-apparmor-and-selinux)
 - [What is SSH?](https://github.com/amaitou/Born2beRoot/blob/master/README.md#what-is-ssh)
   - [How Does SSH Work?](https://github.com/amaitou/Born2beRoot/blob/master/README.md#how-does-ssh-work)
   - [Syntax of establishing an SSH Connection](https://github.com/amaitou/Born2beRoot/blob/master/README.md#syntax-of-establishing-an-ssh-connection)
 - [What is UFW?](https://github.com/amaitou/Born2beRoot/blob/master/README.md#what-is-ufw)
     - [Let's deal with UFW](https://github.com/amaitou/Born2beRoot/blob/master/README.md#lets-deal-with-ufw)
     - [UFW Profiles](https://github.com/amaitou/Born2beRoot/blob/master/README.md#ufw-profiles)
+- [User and Group Management](https://github.com/amaitou/Born2beRoot#user-and-group-management)
+  - [Users](https://github.com/amaitou/Born2beRoot#users)
+  - [Groups](https://github.com/amaitou/Born2beRoot#groups)
+- [Password Management](https://github.com/amaitou/Born2beRoot#password-management)
+  - [Password Policies](https://github.com/amaitou/Born2beRoot#password-policies)
+  - [Login Configuration](https://github.com/amaitou/Born2beRoot#login-configuration)
 
 ----
 # Born2beRoot
