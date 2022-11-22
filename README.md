@@ -43,9 +43,6 @@ The project consists of two parts
 
 # What is LVM?
 
-![LVM Cropped](https://user-images.githubusercontent.com/49293816/202592106-165fba90-e47f-4ff1-85e7-d7777c1062df.jpg)
-
-
 **LVM** stands for `Logical Volume Management/Manager`, it is a system of managing storage `Logical Volumes` (Explained below).
 **LVM** helps you create flexible disks as well as gives you the ability to manage them dynamically (resizing, striping ...). <br />
 **LVM** does not deal with physical disks, so in order to create your `Logical Volume` **LVM** converts the physical disks to `Physical Volumes` then collects them in groups called `Volume Groups`, then Gives them to the `Logical Volume`.
@@ -154,9 +151,6 @@ aptitude remove <PackageName>
 
 # **AppArmor** and **SELinux**
 
-![selinux-vs-apparmor](https://user-images.githubusercontent.com/49293816/202918686-e0050a32-d107-4e70-ae6a-4fedc1b0f34a.jpg)
-
-
 Both `AppArmor` and `SELinux` _(Security Enhanced Linux)_ are Linux Kernel Securities that are used to increase security in Linux distributions by hardening access to files and processes (`AppArmor` is the most used for this purpose).  <br />
 These security systems provide tools to isolate applications from each other... and in turn isolate an attacker from the rest of the system when an application is compromised.
 
@@ -180,9 +174,6 @@ In its default enforcing mode, `SELinux` will deny and log any unauthorized atte
 
 # **What is SSH?**
 
-![61c1b963247368113bbeef17_Secure Shell work](https://user-images.githubusercontent.com/49293816/202873011-c70427fa-cca2-4169-9a11-98d791fbe09b.png)
-
-
 `SSH (Secure Shell or Secure Socket Shell)` is a network protocol that provides a secure way to connect two machines remotely so they can transmit and receive data securely.
 It is widely used by administrators to manage systems and applications remotely, deliver software patches as well as exeute commands and move files.
 By default, an **SSH** Server listens on _TCP (Tranmission Control Protocol)_ port 22.
@@ -200,9 +191,6 @@ ssh <username>@<server ip or hostname> -p <port>
 ---
 
 # What is **UFW**?
-
-![1111-6](https://user-images.githubusercontent.com/49293816/202873453-8b3e83c6-a0c6-4464-bbed-0584c10fabbd.png)
-
 
 `UFW (uncomplicated firewall)` is a firewall configuration tool that helps you secure your network properly. as well as it is a much more user-friendly framework for managing Netfilter and a command-line interface for working with the firewall. On top of that, if you'd rather not deal with the command line, `UFW` has a few GUI tools that make working with the system incredibly simple.
 > Note -> **UFW** comes pre-installed on **Ubuntu**
