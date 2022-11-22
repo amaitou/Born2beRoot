@@ -273,3 +273,136 @@ Some of the applications that rely on network communications set up profiles in 
     ```
 
 ---
+
+# **User and Group Management**
+
+Here is some commands that might help you dealing directly with managing, deleting, adding as well as updating users and groups within your Linux system.
+
+### **Users**
+
+User in linux is an entity which has a unique ID, that can manipulate files and performs several operations within the Linux OS.
+
+- Get the user's id
+
+    ```sh
+    id <username>
+    ```
+    ---
+- Add a user in the system
+
+    ```sh
+    useradd -m -d </home/"name of the directory"> -c <description> <username>
+    ```
+
+    **-m** -> creates a user with creating its home directory
+
+    **-d** -> the name of the home directory
+
+    **-c** -> the description of the creation of the user
+
+    Here is the absoulte path of the default user creation by user add **`/etc/default/useradd`**
+
+    ---
+
+- Delete user from the system
+
+    ```sh
+    userdel -r <username>
+    ```
+    **-r** -> deletes the home directory of the deleted user
+    
+    ---
+
+- Assign a password to a user
+    
+    ```sh
+    passwd <username>
+    ```
+
+### **Groups**
+
+There are two categories of groups, **Primary Group** which is created automatically when we create a user with the same id as the created user as well as it gets added to the **Primary Group** to be the first and the only member of that group. <br /> 
+The second category is the **Secondary Group** which is created manually by the user using specific commands and we can add a user into it.
+
+- Add a group
+
+    ```sh
+    groupadd <groupname>
+    ```
+
+    ---
+
+- Delete group
+
+    ```sh
+    groupdel <groupname>
+    ```
+    ---
+
+- Add a user to a particular group
+
+    ```sh
+    usermod -a -G <groupsname> <username>
+    ```
+    **-a** -> appends the user to the supplemental GROUPS
+
+    **-G** -> new list of supplementary GROUPS
+
+    ---
+
+- Delete a user from a particular group
+
+    ```sh
+    gpasswd -d <username> <groupname>
+    ```
+
+# Password Management
+
+### **Password Policies**
+
+Not only in `linux` but in every **OS**, the password policies are so important to generate and build strong passwords in order to avoid a few attacks (most of them is Brute-Force), that's why linux comes with a library called `libpam-cracklib` that helps you create a strong password by setting up some options.
+
+```sh
+# to install the library, just type the following command!
+apt-get install libpam-cracklib
+```
+
+> The config path of the Library is `/etc/pam.d/`
+
+get in the the path then the file called `common-password` and here is the following options to generate a strong password:
+
+```
+option=number
+```
+
+- **lcredit**: number of lowercase letters
+- **ucredit**: number of uppercase letters
+- **dcredit**: number of digits
+- **maxrepeat**: number of consecutive identical characters
+- **usercheck**: checks if the password has somehow the username
+- **difok**: how many characters must not be included in the new password
+- check_username: checks whether the password has the name of the name straight or reversed
+
+### **Login Configuration**
+
+The file `/etc/login.defs` helps when it comes to setting up some conditions related to reseting password (security related)
+
+There is 3 option you might work with which are:
+
+- PASS_MAX_DAYS -> Maximum number of days a password may be used
+- PASS_MIN_DAYS -> Minimum number of days allowed between password changes
+- PASS_WARN_AGE -> Number of days warning given before a password expires
+
+rather than this you can set this options using CLI:
+
+```sh
+# Syntax
+sudo chage --mindays <number> --maxdays <number> --warndays <number> <username>
+# Exmaple
+sudo chage --mindays 2 --maxdays 30 --warndays 7 amait-ou
+
+```
+
+- **--mindays or -m**
+- **--maxdays or -M**
+- **--warndays or -w**
