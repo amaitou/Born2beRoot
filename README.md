@@ -402,7 +402,7 @@ rather than this, you can set these options using CLI:
 ```sh
 # Syntax
 sudo chage --mindays <number> --maxdays <number> --warndays <number> <username>
-# Exmaple
+# Examaple
 sudo chage --mindays 2 --maxdays 30 --warndays 7 amait-ou
 ```
 
