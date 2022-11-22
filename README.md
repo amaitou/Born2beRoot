@@ -276,11 +276,11 @@ Some of the applications that rely on network communications set up profiles in 
 
 # **User and Group Management**
 
-Here is some commands that might help you dealing directly with managing, deleting, adding as well as updating users and groups within your Linux system.
+Here are some commands that might help you deal directly with managing, deleting, adding as well as updating users and groups within your Linux system.
 
 ### **Users**
 
-User in linux is an entity which has a unique ID, that can manipulate files and performs several operations within the Linux OS.
+A user in Linux is an entity that has a unique ID, that can manipulate files and performs several operations within the Linux OS.
 
 - Get the user's id
 
@@ -288,7 +288,7 @@ User in linux is an entity which has a unique ID, that can manipulate files and 
     id <username>
     ```
     ---
-- Add a user in the system
+- Add a user to the system
 
     ```sh
     useradd -m -d </home/"name of the directory"> -c <description> <username>
@@ -300,11 +300,11 @@ User in linux is an entity which has a unique ID, that can manipulate files and 
 
     **-c** -> the description of the creation of the user
 
-    Here is the absoulte path of the default user creation by user add **`/etc/default/useradd`**
+    Here is the absolute path of the default user creation by user add **`/etc/default/useradd`**
 
     ---
 
-- Delete user from the system
+- Delete a user from the system
 
     ```sh
     userdel -r <username>
@@ -321,8 +321,8 @@ User in linux is an entity which has a unique ID, that can manipulate files and 
 
 ### **Groups**
 
-There are two categories of groups, **Primary Group** which is created automatically when we create a user with the same id as the created user as well as it gets added to the **Primary Group** to be the first and the only member of that group. <br /> 
-The second category is the **Secondary Group** which is created manually by the user using specific commands and we can add a user into it.
+There are two categories of groups, **Primary Group** is created automatically when we create a user with the same id as the created user as well as it gets added to the **Primary Group** to be the first and the only member of that group. <br /> 
+The second category is the **Secondary Group** which is created manually by the user using specific commands and we can add a user to it.
 
 - Add a group
 
@@ -332,7 +332,7 @@ The second category is the **Secondary Group** which is created manually by the 
 
     ---
 
-- Delete group
+- Delete Group
 
     ```sh
     groupdel <groupname>
@@ -360,7 +360,7 @@ The second category is the **Secondary Group** which is created manually by the 
 
 ### **Password Policies**
 
-Not only in `linux` but in every **OS**, the password policies are so important to generate and build strong passwords in order to avoid a few attacks (most of them is Brute-Force), that's why linux comes with a library called `libpam-cracklib` that helps you create a strong password by setting up some options.
+Not only in `Linux` but in every **OS**, the password policies are so important to generate and build strong passwords in order to avoid a few attacks (most of them are Brute-Force), that's why Linux comes with a library called `libpam-cracklib` that helps you create a strong password by setting up some options.
 
 ```sh
 # to install the library, just type the following command!
@@ -368,8 +368,7 @@ apt-get install libpam-cracklib
 ```
 
 > The config path of the Library is `/etc/pam.d/`
-
-get in the the path then the file called `common-password` and here is the following options to generate a strong password:
+get in the path then the file called `common-password` and here is the following options to generate a strong password:
 
 ```
 option=number
@@ -385,7 +384,7 @@ option=number
 
 ### **Login Configuration**
 
-The file `/etc/login.defs` helps when it comes to setting up some conditions related to reseting password (security related)
+The file `/etc/login.defs` helps when it comes to setting up some conditions related to resetting password (security related)
 
 There is 3 option you might work with which are:
 
@@ -393,14 +392,13 @@ There is 3 option you might work with which are:
 - PASS_MIN_DAYS -> Minimum number of days allowed between password changes
 - PASS_WARN_AGE -> Number of days warning given before a password expires
 
-rather than this you can set this options using CLI:
+rather than this, you can set these options using CLI:
 
 ```sh
 # Syntax
 sudo chage --mindays <number> --maxdays <number> --warndays <number> <username>
 # Exmaple
 sudo chage --mindays 2 --maxdays 30 --warndays 7 amait-ou
-
 ```
 
 - **--mindays or -m**
