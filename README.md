@@ -28,6 +28,7 @@
   - [Login Configuration](https://github.com/amaitou/Born2beRoot#login-configuration)
 
 ----
+
 # Born2beRoot
 
 This is the fourth project of `42/1337Cursus`. <br />
@@ -349,6 +350,8 @@ The second category is the **Secondary Group** which is created manually by the 
     gpasswd -d <username> <groupname>
     ```
 
+----
+
 # Password Management
 
 ### **Password Policies**
@@ -397,3 +400,66 @@ sudo chage --mindays 2 --maxdays 30 --warndays 7 amait-ou
 - **--mindays or -m**
 - **--maxdays or -M**
 - **--warndays or -w**
+
+----
+# SUDO
+
+### **Understand SUDO**
+
+Whenever you try to run a command that requires root privileges you will be asked to have root permission, simply here where the role of sudo comes to give you privileges, not only with root but whenever you try to execute a command related to other users or root, you must type `sudo` so you can get privileged.
+
+Not all users could use `sudo` only sudo's group members or those users that were given permission to use sudo within the configuration file `siduoers`.
+
+- Add a user to `sudo` group
+
+```sh
+usermod -aG sudo <username>
+```
+- Give the user full `sudo` access using `sudoers` file
+
+    first of all, run the command ```visudo```and then give it access. Here is the how:
+
+```sh
+#syntax
+<username> ALL=(ALL) ALL
+#example
+amait-ou ALL=(ALL) ALL
+```
+> Note -> create a group and give it full sudo access give its members full sudo access as well
+
+### **Configure SUDO**
+
+going on with the same file `sudoers` that can be opened using the command `visudo` (best practice), there are some options that you can add to configure the `sudoers` file
+
+- Limite the password authentication
+
+```sh
+Defaults pass_tries=<number>
+```
+
+---
+
+- Custome message to be shown when the password is written wrongly
+
+```sh
+Defaults badpass_message=" your message here"
+```
+
+---
+
+- Enable the tty by default for security reasons
+
+```sh
+Defaults requiretty
+```
+
+---
+
+- Archive sudo commands within a folder
+
+```sh
+Defaults log_output
+Defaults log_input
+Defaults iolog_dir = "path"
+```
+> So on with the other options (secure path...)
