@@ -26,7 +26,9 @@
 - [Password Management](https://github.com/amaitou/Born2beRoot#password-management)
   - [Password Policies](https://github.com/amaitou/Born2beRoot#password-policies)
   - [Login Configuration](https://github.com/amaitou/Born2beRoot#login-configuration)
-
+- [SUDO](https://github.com/amaitou/Born2beRoot#sudo)
+  - [Understand SUDO](https://github.com/amaitou/Born2beRoot#understand-sudo)
+  - [Configure SUDO](https://github.com/amaitou/Born2beRoot#configure-sudo)
 ----
 
 # Born2beRoot
