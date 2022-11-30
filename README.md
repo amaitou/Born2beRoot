@@ -29,6 +29,8 @@
 - [SUDO](https://github.com/amaitou/Born2beRoot#sudo)
   - [Understand SUDO](https://github.com/amaitou/Born2beRoot#understand-sudo)
   - [Configure SUDO](https://github.com/amaitou/Born2beRoot#configure-sudo)
+- [Get close to crontab](https://github.com/amaitou/Born2beRoot#get-close-to-crontab)
+  - [How to use crontab](https://github.com/amaitou/Born2beRoot#how-to-use-crontab)
 ----
 
 # Born2beRoot
@@ -473,6 +475,8 @@ Defaults iolog_dir = "path"
 the `crontab` is a file that helps you schedule your programs to be run at a specific time.
 
 within the project, you will be asked to create a `(monitoring.sh)` that runs by the crontab every 10 minutes. the script will display some information related to the system.
+
+> Note -> The bash script `monitoring.sh` is included within under the same name this repository
 
 ### How to use **crontab**
 
