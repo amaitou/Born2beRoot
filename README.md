@@ -476,7 +476,7 @@ the `crontab` is a file that helps you schedule your programs to be run at a spe
 
 within the project, you will be asked to create a `(monitoring.sh)` that runs by the crontab every 10 minutes. the script will display some information related to the system.
 
-> Note -> The bash script `monitoring.sh` is included within under the same name this repository
+> Note -> The bash script `monitoring.sh` is included under the same name this repository
 
 ### How to use **crontab**
 
