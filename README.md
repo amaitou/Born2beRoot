@@ -465,3 +465,44 @@ Defaults log_input
 Defaults iolog_dir = "path"
 ```
 > So on with the other options (secure path...)
+
+----
+
+# Get close to crontab
+
+the `crontab` is a file that helps you schedule your programs to be run at a specific time.
+
+within the project, you will be asked to create a `(monitoring.sh)` that runs by the crontab every 10 minutes. the script will display some information related to the system.
+
+### How to use **crontab**
+
+- add a crontab job to a specific user
+
+```sh
+sudo crontab -u <username> -e
+
+# -u -> specify the username
+# -e -> stands for edit the crontab job
+```
+
+With this command a config file will open for adding the crontab job, and here is the syntax to have it properly set
+
+```sh
+* * * * * command
+
+# first  * (m)       -> minutes
+# second * ()        -> hours
+# third  *  (dom)    -> day of the month
+# fourth *  (mon)    -> month
+# fifth  *  (dow)    -> day of the week
+```
+
+---
+
+- List user's crontab jobs
+
+```sh
+sudo crontab -l
+
+# -l -> stands for list crontab jobs
+```
