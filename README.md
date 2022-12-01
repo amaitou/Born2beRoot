@@ -380,7 +380,8 @@ option=number
 - **maxrepeat**: number of consecutive identical characters
 - **usercheck**: checks if the password has somehow the username
 - **difok**: how many characters must not be included in the new password
-- check_username: checks whether the password has the name of the name straight or reversed
+- **check_username**: checks whether the password has the name of the name straight or reversed
+- **enfore_for_root**: enforce the root user with these policies
 
 ### **Login Configuration**
 
