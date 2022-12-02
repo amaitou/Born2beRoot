@@ -4,7 +4,7 @@ wall "
 	#Architecture	: $(uname -a)
 	#CPU physical	: $(cat /proc/cpuinfo | grep processor | wc -l)
 	#vCPU		: $(cat /proc/cpuinfo | grep processor | wc -l)
-	#Memory Usage	: $(free --mega | grep Mem | awk '{printf "%d/%dMB (%.2f%%)", $3, $2, $3*100/$2}')
+	#Memory Usage	: $(free -m | grep Mem | awk '{printf "%d/%dMB (%.2f%%)", $3, $2, $3*100/$2}')
 	#Disk Usage	: $(df -Bg --total | grep total |awk '{printf "%d/%dGB (%d%%)", $3 * 1024, $4, $5}')
 	#CPU load	: $(mpstat | grep all | cut -c 20- | awk '{printf "%.2f%%", 100 - $10}')
 	#Last boot	: $(who -b | awk '{printf "%s %s", $3, $4}')
