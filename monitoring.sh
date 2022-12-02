@@ -15,5 +15,5 @@ else
 fi)
 	#Connections TCP: $(ss --tcp | wc -l | awk '{printf "%d ESTABLISHED", $1 - 1}')
 	#User log	: $(users | wc -w)
-	#Network	: IP $(hostname -I)$(ifconfig | ip link | grep ether | awk '{printf "(%s)", $2}')
+	#Network	: IP $(hostname -I)$(ip link | grep ether | awk '{printf "(%s)", $2}')
 	#Sudo		: $(ls /var/log/sudo/00/00/ | wc -w) cmd"
