@@ -3,7 +3,7 @@
 
 ----
 
-# Table of content
+# Table of contents
 - [Born2beRoot](https://github.com/amaitou/Born2beRoot#born2beroot)
 - [What is LVM?](https://github.com/amaitou/Born2beRoot#what-is-lvm)
 - [The difference between aptitude and apt?](https://github.com/amaitou/Born2beRoot#the-difference-between-aptitude-and-apt)
