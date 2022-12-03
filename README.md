@@ -439,7 +439,7 @@ going on with the same file `sudoers` that can be opened using the command `visu
 - Limite the password authentication
 
 ```sh
-Defaults pass_tries=<number>
+Defaults passwd_tries=<number>
 ```
 
 ---
