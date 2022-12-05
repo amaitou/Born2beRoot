@@ -409,7 +409,7 @@ sudo chage --mindays 2 --maxdays 30 --warndays 7 amait-ou
 ----
 # SUDO
 
-### **Understand SUDO**
+### **Understand SUDO (Super User Do)**
 
 Whenever you try to run a command that requires root privileges you will be asked to have root permission, simply here where the role of sudo comes to give you privileges, not only with root but whenever you try to execute a command related to other users or root, you must type `sudo` so you can get privileged.
 
