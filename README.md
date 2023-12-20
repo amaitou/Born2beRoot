@@ -50,7 +50,7 @@ The project consists of two parts
 
 **LVM** stands for `Logical Volume Management/Manager`, it is a system of managing storage `Logical Volumes` (Explained below).
 **LVM** helps you create flexible disks as well as gives you the ability to manage them dynamically (resizing, striping ...). <br />
-**LVM** does not deal with physical disks, so in order to create your `Logical Volume` **LVM** converts the physical disks to `Physical Volumes` then collects them in groups called `Volume Groups`, then Gives them to the `Logical Volume`.
+**LVM** does not deal with physical disks, so to create your `Logical Volume` **LVM** converts the physical disks to `Physical Volumes` then collects them in groups called `Volume Groups`, then Gives them to the `Logical Volume`.
 
 * **Physical volume** -> A `Physical Volume` is any physical storage device, such as a Hard Disk Drive (HDD), Solid State Drive (SSD), or partition, that has been initialized as a physical volume with **LVM**, The `PV` is a divided chunk of data that also known as `Physical Extents` and that last have the same size as the other `PEs` (4 MB by default).
 
@@ -67,7 +67,7 @@ The project consists of two parts
 
     **_Conclusion of LVM_**
     - `LVM` does not deal with physical disks.
-    - each Physical Volume has a number of `Physical Extents`.
+    - each Physical Volume has several `Physical Extents`.
     - each extent has a specific size (default `PE` size is _4 MO_).
     - A single `Physical Extent` is the smallest unit of disk space that can be individually managed by `LVM`
 
@@ -79,7 +79,7 @@ The project consists of two parts
 
     - let's know first how many PEs would be within 1 GB: <br />
         `1 024 / 4 = 256` <br />
-    - multiple the above result with the size of each PV in order to give us how many PEs would be within one PV: <br />
+    - multiple the above result with the size of each PV to give us how many PEs would be within one PV: <br />
         `125 * 256 = 32 000` <br />
     - multiple the result of the above operation with 4 as we have 4 PVs: <br />
         `32 000 * 4 = 128 000` <br />
@@ -90,7 +90,7 @@ The project consists of two parts
 
 # The difference between **aptitude** and **apt**?
 
-`apt-get` and `aptitude ` are both package managers that are responsible for any kind of activities related to packages (removing, installing, searchin, updating, upgrading ...).
+`apt-get` and `aptitude ` are both package managers that are responsible for any kind of activities related to packages (removing, installing, searching, updating, upgrading ...).
 
 but the most obvious difference between them is that `aptitude` has a terminal menu interface to interact with, whereas `apt-get ` doesn't.
 
@@ -107,7 +107,7 @@ So, for most cases, the syntax of **Aptitude** is kept almost the same as that o
 
 <br />
 
-> I've been using `apt-get` but after I knew about `aptitude`, I started using it
+> I've been using `apt-get` but after I learned about `aptitude`, I started using it
 
 <br />
 
@@ -145,8 +145,8 @@ The primary difference being **remove** and ‘purge‘ is that **remove** only 
 
 ```sh
 # apt-get
-apt-get remove <PackageName> # removes only the package and leaves its configuration files
-apt-get purge <PackageName> # remove the package including its configuration files
+apt-get remove <PackageName> # Removes only the package and leaves its configuration files
+apt-get purge <PackageName> # Removes the package including its configuration files
 
 # aptitude
 aptitude remove <PackageName>
@@ -157,7 +157,7 @@ aptitude remove <PackageName>
 # **AppArmor** and **SELinux**
 
 Both `AppArmor` and `SELinux` _(Security Enhanced Linux)_ are Linux Kernel Securities that are used to increase security in Linux distributions by hardening access to files and processes (`AppArmor` is the most used for this purpose).  <br />
-These security systems provide tools to isolate applications from each other... and in turn isolate an attacker from the rest of the system when an application is compromised.
+These security systems provide tools to isolate applications from each other... and in turn, isolate an attacker from the rest of the system when an application is compromised.
 
 ### **SELinux**
 `SELinux` is a kernel module that can be enabled or disabled by the system admin. As access to files and network ports is limited following a security policy, a faulty program or a misconfigured daemon can’t make a huge impact on system security. <br />
@@ -171,7 +171,7 @@ In its default enforcing mode, `SELinux` will deny and log any unauthorized atte
 
 - SELinux is the Default for Rocky Linux, AlmaLinux, CentOS, and Red Hat.
 - SELinux is Designed to protect the entire operating system.
-- AppArmor is the Default for OpenSUSE, Debian and Ubuntu.
+- AppArmor is the Default for OpenSUSE, Debian, and Ubuntu.
 - AppArmor works with file paths.
 - AppArmor is less complex and easier for the average user to learn than SELinux.
 
@@ -180,12 +180,12 @@ In its default enforcing mode, `SELinux` will deny and log any unauthorized atte
 # **What is SSH?**
 
 `SSH (Secure Shell or Secure Socket Shell)` is a network protocol that provides a secure way to connect two machines remotely so they can transmit and receive data securely.
-It is widely used by administrators to manage systems and applications remotely, deliver software patches as well as exeute commands and move files.
-By default, an **SSH** Server listens on _TCP (Tranmission Control Protocol)_ port 22.
+It is widely used by administrators to manage systems and applications remotely, deliver software patches as well as execute commands, and move files.
+By default, an **SSH** Server listens on _TCP (Transmission Control Protocol)_ port 22.
 
 ### **How Does SSH Work?**
 
-The connection is established by an `SSH Client` that intends to connect to an `SSH Server`, the `SSH Client` starts the connection setup process and uses a pubic key to verify the identity of the `SSH Server`, after the setup step, the `SSH Protcol` uses strong symmetric encryption and hashing algorithms to ensure the privacy and integrity of the exchanged data between the `Client` and the `Server`.
+The connection is established by an `SSH Client` that intends to connect to an `SSH Server`, the `SSH Client` starts the connection setup process and uses a public key to verify the identity of the `SSH Server`, after the setup step, the `SSH Protcol` uses strong symmetric encryption and hashing algorithms to ensure the privacy and integrity of the exchanged data between the `Client` and the `Server`.
 
 ### **Syntax of establishing an SSH Connection**
 
@@ -237,7 +237,7 @@ Allowing and blocking either **IP Address, Ports, Subnets** would be added to th
 - Delete UFW's rule
 
     ```sh
-    # delete an UFW's rule
+    # delete a UFW's rule
     sudo ufw delete <rule>
     #example
     sudo ufw delete allow from <x.x.x.x>
@@ -265,7 +265,7 @@ Some of the applications that rely on network communications set up profiles in 
     ---
 - Disable an application profile
 
-    In order to disable an application you must delete the created rule for it
+    To disable an application you must delete the created rule for it
     ```sh
         sudo ufw delete allow <profile name>
     ```
@@ -278,9 +278,9 @@ Here are some commands that might help you deal directly with managing, deleting
 
 ### **Users**
 
-A user in Linux is an entity that has a unique ID, that can manipulate files and performs several operations within the Linux OS.
+A user in Linux is an entity that has a unique ID, that can manipulate files and perform several operations within the Linux OS.
 
-- Get the user's id
+- Get the user's ID
 
     ```sh
     id <username>
@@ -296,7 +296,7 @@ A user in Linux is an entity that has a unique ID, that can manipulate files and
 
     **-d** -> the name of the home directory
 
-    **-c** -> the description of the creation of the user
+    **-c** -> The description of the creation of the user
 
     Here is the absolute path of the default user creation by user add **`/etc/default/useradd`**
 
@@ -363,7 +363,7 @@ The second category is the **Secondary Group** which is created manually by the 
 Not only in `Linux` but in every **OS**, the password policies are so important to generate and build strong passwords in order to avoid a few attacks (most of them are Brute-Force), that's why Linux comes with a library called `libpam-cracklib` that helps you create a strong password by setting up some options.
 
 ```sh
-# to install the library, just type the following command!
+# To install the library, just type the following command!
 apt-get install libpam-cracklib
 ```
 
@@ -385,9 +385,9 @@ option=number
 
 ### **Login Configuration**
 
-The file `/etc/login.defs` helps when it comes to setting up some conditions related to resetting password (security related)
+The file `/etc/login.defs` helps when it comes to setting up some conditions related to resetting passwords (security-related)
 
-There is 3 option you might work with which are:
+There are 3 options you might work with which are:
 
 - PASS_MAX_DAYS -> Maximum number of days a password may be used
 - PASS_MIN_DAYS -> Minimum number of days allowed between password changes
@@ -411,9 +411,9 @@ sudo chage --mindays 2 --maxdays 30 --warndays 7 amait-ou
 
 ### **Understand SUDO (Super User Do)**
 
-Whenever you try to run a command that requires root privileges you will be asked to have root permission, simply here where the role of sudo comes to give you privileges, not only with root but whenever you try to execute a command related to other users or root, you must type `sudo` so you can get privileged.
+Whenever you try to run a command that requires root privileges you will be asked to have root permission, simply where the role of sudo comes to give you privileges, not only with root but whenever you try to execute a command related to other users or root, you must type `sudo` so you can get privileged.
 
-Not all users could use `sudo` only sudo's group members or those users that were given permission to use sudo within the configuration file `siduoers`.
+Not all users could use `sudo` only sudo's group members or those users that were permitted to use sudo within the configuration file `siduoers`.
 
 - Add a user to `sudo` group
 
@@ -430,7 +430,7 @@ usermod -aG sudo <username>
 #example
 amait-ou ALL=(ALL) ALL
 ```
-> Note -> create a group and give it full sudo access give its members full sudo access as well
+> Note -> Create a group and give it full sudo access give its members full sudo access as well
 
 ### **Configure SUDO**
 
